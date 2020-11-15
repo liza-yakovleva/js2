@@ -1,5 +1,7 @@
+"use strict";
+
 // age check
-let userAge = prompt("Введіть свій вік :");
+let userAge = + prompt("Введіть свій вік :");
 if (userAge >= 18 && userAge <= 45) {
   alert("Вік підходить");
 }
@@ -8,29 +10,27 @@ else {
 }
 
 //  what quarter of an hour
-let userNumber = prompt("Введіть своє число від 0 до 59 :");
+let userNumber = + prompt("Введіть своє число від 0 до 59 :");
 if (userNumber >= 0 && userNumber <= 14) {
   alert("Перша четвертина години");
 }
-if (userNumber >= 15 && userNumber <= 30) {
+else if (userNumber >= 15 && userNumber <= 30) {
   alert("Друга четвертина години");
 }
-if (userNumber >= 31 && userNumber <= 45) {
+else if (userNumber >= 31 && userNumber <= 45) {
   alert("Третя четвертина години");
 }
-if (userNumber >= 46 && userNumber <= 59) {
+else if (userNumber >= 46 && userNumber <= 59) {
   alert("Четверта четвертина години");
 }
-// else  {
-//   alert("Число не підходить");
-// }
+else  {
+  alert("Число не підходить");
+}
 
 // right or wrong
-let a = prompt("Введіть своє число a :");
-let b = prompt("Введіть своє число b :");
-a = Number(a);
-b = Number(b);
-if (a > 3 && a < 12, b > 5 && b < 13) {
+let a = + prompt("Введіть своє число a :");
+let b = + prompt("Введіть своє число b :");
+if (a > 3 && a < 12 && b > 5 && b < 13) {
   alert("вірно");
 }
 else {
